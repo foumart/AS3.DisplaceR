@@ -97,11 +97,11 @@ package com.foumart.effects {
 		*	@tiptext
 		*/
 		public static function to(	object_to_displace:DisplayObject,
-									displace_map:DisplayObject,
-									ease:Function = null,
-									ammount:Number = 0,
-									duration:Number = 0,
-									useSeconds:Boolean = true):void {
+						displace_map:DisplayObject,
+						ease:Function = null,
+						ammount:Number = 0,
+						duration:Number = 0,
+						useSeconds:Boolean = true):void {
 			if( instance == null ) {
 				tweener = new TweenerCheck(object_to_displace, ease, ammount, duration, useSeconds)
 				instance = new DisplaceR(tweener, displace_map);
@@ -227,10 +227,10 @@ internal class TweenerCheck{
 	public var useSeconds:Boolean;
 	
 	public function TweenerCheck(	_source:DisplayObject,
-									_ease:Function = null,
-									_ammount:Number = 0,
-									_duration:Number = 0,
-									_useSeconds:Boolean = true) {
+					_ease:Function = null,
+					_ammount:Number = 0,
+					_duration:Number = 0,
+					_useSeconds:Boolean = true) {
 		source = _source;
 		ease = _ease;
 		ammount = _ammount;
